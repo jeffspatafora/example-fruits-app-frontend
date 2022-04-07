@@ -29,9 +29,10 @@ export default {
   <div class="home">
     <h1>{{ message }}</h1>
     <div v-for:="fruit in fruits" v-bind:key="fruit.id">
-      <p>{{ fruit.name }}</p>
+      <h3>{{ fruit.name }}</h3>
       <img v-bind:src="fruit.image" v-bind:alt="fruit.name" />
-      <p>width: {{ fruit.width }}</p>
+      <p>kind: {{ fruit.kind }}</p>
+      <p>quantity: {{ fruit.quantity }}</p>
     </div>
     <button v-on:click="indexFruits()">index fruits</button>
   </div>
